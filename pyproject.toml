@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pendragondi-api-pro"   # <--- Correct brand and naming
+name = "pendragondi-api-pro" 
 version = "1.0.0"
 description = "Context-rich duplicate detection (non-AI)"
 readme = "README.md"
@@ -17,7 +17,7 @@ classifiers = [
 ]
 
 [project.scripts]
-pendragondi-api-pro = "pendragon_pro.cli:app"   # (CLI entry command)
+pendragondi-api-pro = "pendragon_pro.cli:app"
 
 [tool.setuptools]
 package-dir = {"" = "."}
