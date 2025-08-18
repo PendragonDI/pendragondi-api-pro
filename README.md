@@ -1,11 +1,11 @@
-# Pendragon Pro
+# PendragonDI Pro
 
 Context-rich, in-app duplicate detection for Python.
 
 ## 🚀 Quickstart (Simple Mode)
 
 ```python
-from pendragon_pro import duplicate_guard
+from pendragondi_pro import duplicate_guard
 
 @duplicate_guard
 def call_api(...):
@@ -15,7 +15,7 @@ def call_api(...):
 ## ⚡️ Advanced Usage
 
 ```python
-from pendragon_pro import duplicate_guard_pro
+from pendragondi_pro import duplicate_guard_pro
 
 @duplicate_guard_pro(window_ms=3000, capture_args=False, rate_limit_per_minute=60)
 def call_api(...):
@@ -25,7 +25,7 @@ def call_api(...):
 ## 🖥 CLI Usage
 
 ```bash
-pendragon-pro export --output myreport.html --format html
+pendragondi_pro export --output myreport.html --format html
 ```
 
 ## 📂 Examples
@@ -43,7 +43,7 @@ pendragon-pro export --output myreport.html --format html
 ## 📦 Export Reports
 
 ```python
-from pendragon_pro import get_event_log, export_html
+from pendragondi_pro import get_event_log, export_html
 
 events = get_event_log().snapshot()
 export_html(events, "report.html")
@@ -67,7 +67,7 @@ No telemetry. Redaction for PII by default. See `redact.py` for details.
 
 ## 🧭 Why PendragonDI?
 
-Pendragon Pro was built to solve the *next layer* of API waste and developer friction—giving you real-time, context-rich duplicate detection, with privacy and speed at the core.
+PendragonDI Pro was built to solve the *next layer* of API waste and developer friction—giving you real-time, context-rich duplicate detection, with privacy and speed at the core.
 
 No agents. No data sales. No telemetry. Just the signal you need to debug smarter.
 
@@ -88,6 +88,6 @@ When contributing:
 
 ## 💖 Support the Project
 
-Pendragon Pro is open-source and free to use.  
+PendragonDI Pro is open-source and free to use.  
 If you’ve found it useful and would like to support ongoing development, you can sponsor us on GitHub:  
 [![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-💖-pink?style=flat)](https://github.com/sponsors/jinpendragon)
