@@ -1,4 +1,3 @@
-# guard_simple.py
 from pendragondi_api_pro import duplicate_guard, get_event_log
 
 @duplicate_guard
@@ -7,10 +6,10 @@ def greet(name):
     return f"Greeted {name}"
 
 # First call - normal
-result1 = greet('Jin')
+greet('Jin')
 
 # Second call - DUPLICATE DETECTED!
-result2 = greet('Jin')  
+greet('Jin')  
 
 # Show what was captured
 events = get_event_log().snapshot()
