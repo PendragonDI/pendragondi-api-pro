@@ -5,8 +5,8 @@ from pendragondi_api_pro.export import export_json, export_csv, export_html
 
 app = typer.Typer(help="PendragonDI API Pro – Export duplicate detection event logs")
 
-@app.command()
-def export(
+@app.callback(invoke_without_command=True)
+def main(
     output: str = typer.Option("report.html", "-o", "--output", help="Output file path"),
     format: str = typer.Option("html", "-f", "--format", help="Report format: html, json, csv"),
 ):
