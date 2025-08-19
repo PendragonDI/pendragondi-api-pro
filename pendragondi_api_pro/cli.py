@@ -1,7 +1,7 @@
 import typer
 from pathlib import Path
-from .core import get_event_log
-from .export import export_json, export_csv, export_html
+from pendragondi_api_pro.core import get_event_log
+from pendragondi_api_pro.export import export_json, export_csv, export_html
 
 app = typer.Typer(help="PendragonDI API Pro – Export duplicate detection event logs")
 
