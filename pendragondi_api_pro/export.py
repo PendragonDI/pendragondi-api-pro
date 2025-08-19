@@ -35,7 +35,7 @@ def export_csv(events: List[Dict[str, Any]], path: str) -> None:
         for row in flat:
             w.writerow(row)
 
-def export_html(events: List[Dict[str, Any]], path: str, title: str = 'Pendragon Pro Report') -> None:
+def export_html(events: List[Dict[str, Any]], path: str, title: str = 'PendragonDI API Pro Report') -> None:
     esc = html.escape
     rows = []
     for e in events:
