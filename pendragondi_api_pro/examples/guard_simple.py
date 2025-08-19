@@ -1,4 +1,4 @@
-from pendragon_pro import duplicate_guard
+from pendragondi_api_pro import duplicate_guard
 
 @duplicate_guard
 def greet(name):
