@@ -3,7 +3,7 @@ from pathlib import Path
 from .core import get_event_log
 from .export import export_json, export_csv, export_html
 
-app = typer.Typer(help="Pendragon Pro – Export duplicate detection event logs")
+app = typer.Typer(help="PendragonDI API Pro – Export duplicate detection event logs")
 
 @app.command()
 def export(
