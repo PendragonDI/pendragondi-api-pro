@@ -3,14 +3,12 @@ from pathlib import Path
 from pendragondi_api_pro.core import get_event_log
 from pendragondi_api_pro.export import export_json, export_csv, export_html
 
-# Explicit Typer app object
 app = typer.Typer(help="PendragonDI API Pro – Export duplicate detection event logs")
 
-# Register export command
 @app.command()
 def export(
     output: str = typer.Option("report.html", "-o", "--output", help="Output file path"),
-    format: str = typer.Option("html", "-f", "--format", help="Report format: html, json, csv"),
+    format: str = typer.Option("html", "-f", "--format", help="Report format: html, csv, json"),
 ):
     """Export duplicate events to a report."""
     events = get_event_log().snapshot()
@@ -24,9 +22,5 @@ def export(
 
     typer.echo(f"Report saved to {Path(output).resolve()}")
 
-# Ensure that app() is invoked from a properly named function
-def main():
-    app()
-
 if __name__ == "__main__":
-    main()
+    app()
