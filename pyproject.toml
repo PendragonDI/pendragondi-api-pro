@@ -17,7 +17,7 @@ classifiers = [
 ]
 
 [project.scripts]
-pendragondi-api-pro = "pendragondi_api_pro.cli:app"
+pendragondi-api-pro = "pendragondi_api_pro.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "."}
