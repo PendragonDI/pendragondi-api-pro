@@ -3,8 +3,10 @@ from pathlib import Path
 from pendragondi_api_pro.core import get_event_log
 from pendragondi_api_pro.export import export_json, export_csv, export_html
 
+# Explicit Typer app object
 app = typer.Typer(help="PendragonDI API Pro – Export duplicate detection event logs")
 
+# Register export command
 @app.command()
 def export(
     output: str = typer.Option("report.html", "-o", "--output", help="Output file path"),
@@ -22,7 +24,7 @@ def export(
 
     typer.echo(f"Report saved to {Path(output).resolve()}")
 
-# THIS MUST BE INCLUDED ONLY FOR PYTHON ENTRY (NOT NEEDED FOR CLI)
+# Ensure that app() is invoked from a properly named function
 def main():
     app()
 
