@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "pendragondi-api-pro"
 version = "1.0.3"
-description = "PendragonDI API Pro: Context-rich duplicate detection (non-AI)"
+description = "PendragoniDI API Pro: Context-rich duplicate detection (non-AI)"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
@@ -13,11 +13,8 @@ authors = [{name="JinPendragon", email="pendragondi@pendragondi.dev"}]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+    "Operating System :: OS Independent"
 ]
-
-[project.scripts]
-pendragondi-api-pro = "pendragondi_api_pro.__main__:main"
 
 [tool.setuptools]
 package-dir = {"" = "."}
