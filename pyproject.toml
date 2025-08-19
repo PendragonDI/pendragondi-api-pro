@@ -9,7 +9,7 @@ description = "PendragoniDI API Pro: Context-rich duplicate detection (non-AI)"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "MIT"}
-authors = [{name="JinPendragon", email="pendragondi@pendragondi.dev"}]
+authors = [{name="jinpendragon", email="pendragondi@pendragondi.dev"}]
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
