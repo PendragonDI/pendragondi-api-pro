@@ -1,11 +1,11 @@
-# PendragonDI Pro
+# PendragonDI API Pro
 
-Context-rich, in-app duplicate detection for Python.
+Context-rich, in-app duplicate detection for Python — real-time, local, and secure.
 
 ## 🚀 Quickstart (Simple Mode)
 
 ```python
-from pendragondi_pro import duplicate_guard
+from pendragondi_api_pro import duplicate_guard
 
 @duplicate_guard
 def call_api(...):
@@ -15,7 +15,7 @@ def call_api(...):
 ## ⚡️ Advanced Usage
 
 ```python
-from pendragondi_pro import duplicate_guard_pro
+from pendragondi_api_pro import duplicate_guard_pro
 
 @duplicate_guard_pro(window_ms=3000, capture_args=False, rate_limit_per_minute=60)
 def call_api(...):
@@ -25,7 +25,7 @@ def call_api(...):
 ## 🖥 CLI Usage
 
 ```bash
-pendragondi_pro export --output myreport.html --format html
+pendragondi-api-pro export --output myreport.html --format html
 ```
 
 ## 📂 Examples
@@ -43,7 +43,7 @@ pendragondi_pro export --output myreport.html --format html
 ## 📦 Export Reports
 
 ```python
-from pendragondi_pro import get_event_log, export_html
+from pendragondi_api_pro import get_event_log, export_html
 
 events = get_event_log().snapshot()
 export_html(events, "report.html")
@@ -51,11 +51,11 @@ export_html(events, "report.html")
 
 ## 🔒 Privacy
 
-No telemetry. Redaction for PII by default. See `redact.py` for details.
+No telemetry. Redaction for PII by default. See `redact.py` for implementation.
 
 ## 💬 Support/Contact
 
-- Open an issue or email pendragondi@pendragondi.dev
+- Open an issue or email [pendragondi@pendragondi.dev](mailto:pendragondi@pendragondi.dev)
 
 ---
 
@@ -67,7 +67,7 @@ No telemetry. Redaction for PII by default. See `redact.py` for details.
 
 ## 🧭 Why PendragonDI?
 
-PendragonDI Pro was built to solve the *next layer* of API waste and developer friction—giving you real-time, context-rich duplicate detection, with privacy and speed at the core.
+PendragonDI API Pro was built to solve the *next layer* of API waste and developer friction — giving you real-time, context-rich duplicate detection with privacy and speed at the core.
 
 No agents. No data sales. No telemetry. Just the signal you need to debug smarter.
 
@@ -78,16 +78,15 @@ No agents. No data sales. No telemetry. Just the signal you need to debug smarte
 Contributions are welcome! If you have suggestions for improvements or find a bug, please open an issue or submit a pull request.
 
 When contributing:
-- Fork the repository and create your branch from `main`.
-- Ensure any new code has appropriate type hints and docstrings.
-- Run the test suite and add tests for new functionality.
-- Submit a descriptive pull request so changes can be reviewed efficiently.
-- Support/Contact: pendragondi@pendragondi.dev
+- Fork the repository and create your branch from `main`
+- Ensure any new code has appropriate type hints and docstrings
+- Run the test suite and add tests for new functionality
+- Submit a descriptive pull request so changes can be reviewed efficiently
 
 ---
 
 ## 💖 Support the Project
 
-PendragonDI Pro is open-source and free to use.  
+PendragonDI API Pro is open-source and free to use.  
 If you’ve found it useful and would like to support ongoing development, you can sponsor us on GitHub:  
 [![Sponsor on GitHub](https://img.shields.io/badge/Sponsor-💖-pink?style=flat)](https://github.com/sponsors/jinpendragon)
