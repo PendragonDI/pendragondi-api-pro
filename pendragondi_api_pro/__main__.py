@@ -1,4 +1,7 @@
-from pendragondi_api_pro.cli import app
+from .cli import app
+
+def main():
+    app()
 
 if __name__ == "__main__":
-    app()
+    main()
