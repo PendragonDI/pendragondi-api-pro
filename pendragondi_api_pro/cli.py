@@ -21,3 +21,10 @@ def export(
         export_html(events, output)
 
     typer.echo(f"Report saved to {Path(output).resolve()}")
+
+# THIS MUST BE INCLUDED ONLY FOR PYTHON ENTRY (NOT NEEDED FOR CLI)
+def main():
+    app()
+
+if __name__ == "__main__":
+    main()
