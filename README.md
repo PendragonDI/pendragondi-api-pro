@@ -22,23 +22,10 @@ def call_api(...):
     ...
 ```
 
-## 🖥 CLI Usage
-
-```bash
-pendragondi-api-pro export --output myreport.html --format html
-```
-
 ## 📂 Examples
 
 - [examples/guard_simple.py](examples/guard_simple.py)
 - [examples/guard_advanced.py](examples/guard_advanced.py)
-
-## 🛠 Configuration
-
-- `window_ms`: Deduplication window (ms, default: 2000)
-- `capture_args`: Whether to log/redact args (default: True)
-- `stack_depth`: How many frames to capture (default: 6)
-- `rate_limit_per_minute`: Bucket per-op deduplication (optional)
 
 ## 📦 Export Reports
 
@@ -48,6 +35,23 @@ from pendragondi_api_pro import get_event_log, export_html
 events = get_event_log().snapshot()
 export_html(events, "report.html")
 ```
+
+## 🖥 Optional CLI (Windows Caveat)
+
+You can also use the tool via command line:
+
+```bash
+python -m pendragondi_api_pro export --output myreport.html --format html
+```
+
+> ℹ️ Note: The `pendragondi-api-pro` CLI script may not resolve correctly on some Windows setups due to Python packaging limitations. We recommend using `python -m pendragondi_api_pro` for consistent cross-platform behavior.
+
+## 🛠 Configuration
+
+- `window_ms`: Deduplication window (ms, default: 2000)
+- `capture_args`: Whether to log/redact args (default: True)
+- `stack_depth`: How many frames to capture (default: 6)
+- `rate_limit_per_minute`: Bucket per-op deduplication (optional)
 
 ## 🔒 Privacy
 
