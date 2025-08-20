@@ -36,16 +36,6 @@ events = get_event_log().snapshot()
 export_html(events, "report.html")
 ```
 
-## 🖥 Optional CLI (Windows Caveat)
-
-You can also use the tool via command line:
-
-```bash
-python -m pendragondi_api_pro export --output myreport.html --format html
-```
-
-> ℹ️ Note: The `pendragondi-api-pro` CLI script may not resolve correctly on some Windows setups due to Python packaging limitations. We recommend using `python -m pendragondi_api_pro` for consistent cross-platform behavior.
-
 ## 🛠 Configuration
 
 - `window_ms`: Deduplication window (ms, default: 2000)
