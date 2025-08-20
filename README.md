@@ -24,8 +24,8 @@ def call_api(...):
 
 ## 📂 Examples
 
-- [examples/guard_simple.py](examples/guard_simple.py)
-- [examples/guard_advanced.py](examples/guard_advanced.py)
+- [examples/guard_simple.py](pendragondi_api_pro/examples/guard_simple.py)
+- [examples/guard_advanced.py](pendragondi_api_pro/examples/guard_advanced.py)
 
 ## 📦 Export Reports
 
