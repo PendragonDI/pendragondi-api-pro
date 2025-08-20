@@ -22,6 +22,23 @@ def call_api(...):
     ...
 ```
 
+## API Reference
+
+| Function | Purpose |
+|----------|---------|
+| `duplicate_guard` | Default 2s window, args captured |
+| `duplicate_guard_pro(...)` | Full config: window, key, stack, rate limit |
+| `get_event_log()` | Returns live log buffer |
+| `export_html(events, path)` | Save report as HTML |
+| `export_json(events, path)` | Save report as JSON |
+| `export_csv(events, path)` | Save report as CSV |
+| `default_redactor` | Scrubs secrets, long args |
+
+---
+
+**🔒 Tip**: For production use with sensitive data, set `capture_args=False` or pass `redact=your_safe_redactor`.
+
+
 ## 📂 Examples
 
 - [examples/guard_simple.py](pendragondi_api_pro/examples/guard_simple.py)
